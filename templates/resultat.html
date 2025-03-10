@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat du Rapport</title>
+</head>
+<body>
+    <h1>Résultats du Rapport</h1>
+    <p><strong>Rapport:</strong> {{ info[0] }}</p>
+    <p><strong>Date du rapport:</strong> {{ info[1] }}</p>
+    <p><strong>Date actuelle:</strong> {{ info[2] }}</p>
+    <p><strong>Différence de jours:</strong> {{ info[3] }} jours</p>
+    <p><strong>Statut:</strong> {{ info[4] }}</p>
+
+    <form method="POST" action="/gestion_anomalie">
+        <label>Gérer l'anomalie :</label>
+        <button type="submit">Gérer Anomalie</button>
+    </form>
+</body>
+</html>

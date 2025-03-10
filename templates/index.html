@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Anomalies</title>
+</head>
+<body>
+    <h1>Bienvenue dans la gestion des anomalies</h1>
+    <form method="POST">
+        <label for="rapport">Sélectionner le rapport:</label>
+        <select name="rapport" required>
+            <option value="Rapport A">Rapport A</option>
+            <option value="Rapport B">Rapport B</option>
+        </select>
+        <br><br>
+
+        <label for="date_rapport">Veuillez saisir la date mentionnée sur le rapport (JJ/MM/AAAA):</label>
+        <input type="text" name="date_rapport" required pattern="\d{2}/\d{2}/\d{4}" placeholder="JJ/MM/AAAA">
+        <br><br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
